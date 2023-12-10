@@ -1,4 +1,4 @@
-module HttpRESTful
+module github.com/Onnywrite/HttpRESTful-test
 
 go 1.21.4
 
