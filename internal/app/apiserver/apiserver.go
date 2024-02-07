@@ -1,10 +1,11 @@
 package apiserver
 
 import (
-	"github.com/gorilla/mux"
-	"github.com/sirupsen/logrus"
 	"io"
 	"net/http"
+
+	"github.com/gorilla/mux"
+	"github.com/sirupsen/logrus"
 )
 
 type API struct {

@@ -1,10 +1,11 @@
 package main
 
 import (
-	"HttpRESTful/internal/app/apiserver"
 	"flag"
-	"github.com/BurntSushi/toml"
 	"log"
+
+	"github.com/BurntSushi/toml"
+	"github.com/Onnywrite/HttpRESTful-test/internal/app/apiserver"
 )
 
 var (
@@ -25,7 +26,7 @@ func main() {
 	}
 
 	serv := apiserver.New(conf)
-	if err := serv.Start(); err != nil {
+	if err = serv.Start(); err != nil {
 		log.Fatal(err)
 	}
 }
